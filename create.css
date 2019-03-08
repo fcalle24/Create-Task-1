@@ -5,15 +5,40 @@ h1 {
 }
 
 body {
-  background-color: #FF7F50
+  background-color: #FED2E2;
+}
+
+#head1 {
+  background-color: #FE6565;
 }
 
 td {
-  width:90px;
-    height:90px;
-    border: solid 1px black;
-    text-align:center;
-    font-size: 20pt;
-    background-color: white;
+  width:100px;
+    height:100px;
+    border: solid 4px black;
+    text-align: center;
+    font-size: 80pt;
+    background-color: #FA6234;
 }
 
+table {
+  float: left;
+  margin-left: 480px;
+}
+
+td:hover {
+  background-color: #FD7A52;
+   cursor:pointer;
+}
+
+#score1 {
+  text-align:center;
+  margin:0 auto;
+  width: 50%;
+  padding-top: 50px;
+}
+
+#score2 {
+  float: left;
+  margin-left: 20px
+}
