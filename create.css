@@ -12,7 +12,7 @@ body {
   background-color: #FE6565;
 }
 
-td {
+#square {
   width:100px;
     height:100px;
     border: solid 4px black;
@@ -21,24 +21,34 @@ td {
     background-color: #FA6234;
 }
 
-table {
+#board {
   float: left;
   margin-left: 480px;
 }
 
-td:hover {
+#score {
+  padding-top: 10px;
+padding-bottom: 50px;
+}
+
+#scoreboard {
+  width: 400px;
+  height: 100px;
+  border: solid 3px black;
+  float: left;
+  margin-left: 440px;
+  background-color: #FECCCC;
+  font-size: 26px;
+  font-family: Helvetica;
+}
+
+#square:hover {
   background-color: #FD7A52;
    cursor:pointer;
 }
 
-#score1 {
-  text-align:center;
-  margin:0 auto;
-  width: 50%;
-  padding-top: 50px;
-}
-
-#score2 {
-  float: left;
-  margin-left: 20px
+#reset {
+  height: 40px;
+  width: 100px;
+  background-color: red;
 }
