@@ -17,9 +17,17 @@ body {
    height:100px;
    text-align: center;
    font-size: 80pt;
-    border: solid 2px #326FFE;
     text-align: center;
     background-color: #F9F8F8;
+}
+
+.vert {
+  border-left: 2px solid #326FFE;
+  border-right: 2px solid #326FFE;
+}
+.hori {
+  border-top: 2px solid #326FFE;
+  border-bottom: 2px solid #326FFE;
 }
 
 #board {
@@ -32,9 +40,9 @@ body {
 #scoreboard {
   width: 400px;
   height: 100px;
-  border: solid 2px black;
+  border: solid 2px #9257F7;
   float: left;
-  margin-left: 440px;
+  margin-left: 420px;
   background-color: #E29FFE;
 }
 
