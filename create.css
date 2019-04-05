@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Caveat Brush';
+  src: url('fonts/CaveatBrush-Regular.ttf');
+}
+
 h1 {
   text-align: center;
   font-size: 70px;
@@ -12,13 +17,30 @@ body {
   background-color: #2A8DFE;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
 .square {
-  width:100px;
-   height:100px;
-   text-align: center;
-   font-size: 80pt;
-    text-align: center;
+  width: 100px;
+   height: 100px;
     background-color: #F9F8F8;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Caveat Brush';
 }
 
 .vert {
@@ -30,14 +52,16 @@ body {
   border-bottom: 2px solid #326FFE;
 }
 
-#board {
-  height: 300px;
-  width: 300px;
-  margin-left: 480px;
-  padding-top: 10px;
+.board {
+  width: 318px;
 }
 
-#scoreboard {
+.box-container {
+  height: 100%;
+  width: 100%;
+}
+
+.scoreboard {
   width: 400px;
   height: 100px;
   border: solid 2px #9257F7;
@@ -64,22 +88,7 @@ body {
   cursor:pointer;
 }
 
-.P1-Score {
-width: 50%;
-margin: 0 auto;
-display: grid;
-align-items: center;
-justify-content: center;
-font-size: 26px;
-  font-family: Helvetica;
-}
-
-.P2-Score {
-  width: 50%;
-  margin: 0 auto;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-    font-family: Helvetica;
+#message {
+  font-size: 20px;
+  padding-left: 324px;
 }
