@@ -9,38 +9,29 @@
     <script type="text/javascript" src="create.js"></script>
   </head>
 
-<body>
+<body onload = "startGame();">
 
 <div class = "head1">
 
 <h1>Tic-Tac-Toe</h1>
 </div>
+<div id = "message"></div>
+<div class = "box-container flex-container flex-col flex-center">
+<div class = "board flex-container flex-wrap">
+  <div class = "square" onClick = "nextMove(this)" id = "1"></div>
+  <div class = "square vert" onClick = "nextMove(this)" id = "2"></div>
+  <div class = "square" onClick = "nextMove(this)" id = "3"></div>
+  <div class = "square hori" onClick = "nextMove(this)" id = "4"></div>
+  <div class = "square vert hori" onClick = "nextMove(this)" id = "5"></div>
+  <div class = "square hori" onClick = "nextMove(this)" id = "6"></div>
+  <div class = "square" onClick = "nextMove(this)" id = "7"></div>
+  <div class = "square vert" onClick = "nextMove(this)" id = "8"></div>
+  <div class = "square" onClick = "nextMove(this)" id = "9"></div>
+</div>
+</div>
 
-<table>
-  <tr>
-    <td id = "scoreboard">Player 1: 0</td>
-  </tr>
-</table>
 
-<table id = "board">
-    <tr>
-         <td class = "square">  </td>
-        <td class = "square vert">  </td>
-        <td class = "square"> </td>
-       </tr>
-       <tr>
-             <td class = "square hori">  </td>
-            <td class = "square vert hori">  </td>
-           <td class = "square hori">  </td>
-          </tr>
-          <tr>
-                <td class = "square">  </td>
-               <td class = "square vert">  </td>
-              <td class = "square">  </td>
-             </tr>
-</table>
-
-<button id = "reset">Reset Game</button>
+<button id = "reset" onclick = "function reset()">Reset Game</button>
 
       </body>
       </html>
