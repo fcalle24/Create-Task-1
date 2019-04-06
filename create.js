@@ -1,8 +1,15 @@
-
 function startGame() {
+  for (var i = 1; i <= 9; i++) {
+    reset(i);
+  }
+
   document.turn = "X";
   document.winner = null;
-  setMsg("It's your turn, " + document.turn + ".")
+  setMsg("Player " + document.turn + " goes first.")
+}
+
+for (var i = 1; i <= 9; i++) {
+  reset(i);
 }
 
 function setMsg(msg) {
@@ -10,8 +17,9 @@ function setMsg(msg) {
 }
 
 function nextMove(square) {
-
-if(square.innerHTML == '') {
+if(document.winner != null){
+  setMsg("Don't be a sore loser.")
+} else if (square.innerHTML == '') {
   square.innerHTML = document.turn;
 switchPlayer();
 } else {
@@ -23,6 +31,8 @@ function switchPlayer() {
   if(checkWinner(document.turn)) {
     setMsg(document.turn + " won!")
     document.winner = document.turn;
+  } else if (checkDraw()) {
+    setMsg ("It's a draw, no one wins.");
   } else if (document.turn == "X") {
     document.turn = "O";
     setMsg("It's your turn, " + document.turn + ".")
@@ -57,4 +67,18 @@ function checkWinner(move) {
     result = true;
   }
   return result;
+}
+
+function checkDraw(move) {
+  for (var i = 1; i <= 9; i++) {
+
+    if (getBox(i)=="")
+      return false;
+    }
+    return true;
+  }
+
+
+function reset(number) {
+  document.getElementById(number).innerHTML = "";
 }
