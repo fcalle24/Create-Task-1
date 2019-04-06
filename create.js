@@ -1,4 +1,5 @@
 function startGame() {
+
   for (var i = 1; i <= 9; i++) {
     reset(i);
   }
@@ -50,10 +51,6 @@ function checkRow(a, b, c, move) {
   return result;
 }
 
-function getBox(number) {
-  return document.getElementById(number).innerHTML;
-}
-
 function checkWinner(move) {
   var result = false;
   if(checkRow(1, 2, 3, move) ||
@@ -78,7 +75,10 @@ function checkDraw(move) {
     return true;
   }
 
+  function getBox(number) {
+    return document.getElementById("s" + number).innerHTML;
+  }
 
 function reset(number) {
-  document.getElementById(number).innerHTML = "";
+  document.getElementById("s" + number).innerHTML = "";
 }
