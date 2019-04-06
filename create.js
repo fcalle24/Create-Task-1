@@ -9,6 +9,7 @@ function startGame() {
   setMsg("Player " + document.turn + " goes first.")
 }
 
+//Got help from Adam Coder video
 for (var i = 1; i <= 9; i++) {
   reset(i);
 }
@@ -19,7 +20,7 @@ function setMsg(msg) {
 
 function nextMove(square) {
 if(document.winner != null){
-  setMsg("Don't be a sore loser.")
+  setMsg("Don't be a sore loser.") //Code from Adam Coder
 } else if (square.innerHTML == '') {
   square.innerHTML = document.turn;
 switchPlayer();
@@ -75,7 +76,8 @@ function checkDraw(move) {
     return true;
   }
 
-  function getBox(number) {
+//Code from Adam Coder
+  function getBox(number) { 
     return document.getElementById("s" + number).innerHTML;
   }
 
